@@ -329,3 +329,14 @@ Any intelligent system basically consists of an end-to-end pipeline starting fro
 The data analysis phase is explained in detail [here](./Data%20Analysis/).
 
 Some machine learning models/algorithms are explained in detail [here](./Machine%20Learning%20Algorithms) and their implementations in the notebook [here](./ML%20Models%20Notebook/).
+
+## **How to Approach a Machine Learning Problem**
+
+Here's a strategy you can apply to approach any machine learning problem:
+
+1. Explore the data and find correlations between inputs and targets
+2. Pick the right model, loss functions and optimizer for the problem at hand
+3. Scale numeric variables and one-hot encode categorical data
+4. Set aside a test set (using a fraction of the training set)
+5. Train the model
+6. Make predictions on the test set and compute the loss
