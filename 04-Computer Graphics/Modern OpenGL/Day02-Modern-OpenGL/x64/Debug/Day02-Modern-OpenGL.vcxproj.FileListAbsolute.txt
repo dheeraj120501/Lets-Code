@@ -1,0 +1,2 @@
+C:\Users\Dheeraj\OneDrive\Desktop\Code\Modern OpenGL\Day02-Modern-OpenGL\x64\Debug\Day02-Modern-OpenGL.exe
+C:\Users\Dheeraj\OneDrive\Desktop\Code\03-Computer Graphics\Modern OpenGL\Day02-Modern-OpenGL\x64\Debug\Day02-Modern-OpenGL.exe

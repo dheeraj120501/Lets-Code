@@ -1,0 +1,3 @@
+C:\Users\Dheeraj\OneDrive\Desktop\Code\Modern OpenGL\Day01\Debug\Day01-First_Triangle.exe
+C:\Users\Dheeraj\OneDrive\Desktop\Code\Modern OpenGL\Day01-Setting_Opengl\Debug\Day01-First_Triangle.exe
+C:\Users\Dheeraj\OneDrive\Desktop\Code\03-Computer Graphics\Modern OpenGL\Day01-Setting_Opengl\Debug\Day01-First_Triangle.exe

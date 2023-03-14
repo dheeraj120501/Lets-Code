@@ -1,0 +1,3 @@
+- Facial recognition is a two stage process.
+  - The first stage is detecting the presence of a face in an image but not knowing “who” the actual face is.
+  - The second stage is taking each detected face and recognizing it. For this, you would need a dedicated facial recognition algorithm.

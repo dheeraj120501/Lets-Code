@@ -1,0 +1,56 @@
+Operator Overloading
+------------------------
+"Operator Overloading is defining special methods for a class, that support use of its objects like operands of an expression."
+
+Following list describes association between the operand and the special function to be defined for overloading.
+
+===========================================================
+Assignment Operators		Special Function
+
+x -= y				__isub__(self, other)
+x += y				__iadd__(self, other)
+x *= y				__imul__(self, other)
+x /= y				__idiv__(self, other)
+x //= y				__ifloordiv__(self, other)
+x %= y				__imod__(self, other)
+x **= y				__ipow__(self, other)
+x >>= y				__irshift__(self, other)
+x <<= y				__ilshift__(self, other)
+x &= y				__iand__(self, other)
+x |= y				__ior__(self, other)
+x ^= y				__ixor__(self, other)
+
+====================================================================
+Comparison Operators		Special Function
+
+x < y				__lt__(self, other)
+x > y				__gt__(self, other)
+x <= y				__le__(self, other)
+x >= y				__ge__(self, other)
+x == y				__eq__(self, other)
+x != y	 			__ne__(self, other)
+
+====================================================================
+Binary Operators		Special Function
+
+x – y				__sub__(self, other)
+x + y				__add__(self, other)
+x * y				__mul__(self, other)
+x / y 				__truediv__(self, other)
+x // y				__floordiv__(self, other)
+x % y				__mod__(self, other)
+x ** y				__pow__(self, other)
+x >> y				__rshift__(self, other)
+x << y				__lshift__(self, other)
+x & y				__and__(self, other)
+x | y				__or__(self, other)
+x ^ y 				__xor__(self, other)
+
+====================================================================
+Unary Operators			Special Function
+
+–x				__neg__(self)
++x				__pos__(self)
+~x				__invert__(self)
+====================================================================
+

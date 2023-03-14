@@ -1,0 +1,58 @@
+Code: Instructions to perform tasks.
+Python code can be organized in 3 ways:
+1) As script
+2) As functions
+3) As classes (to be discussed later)
+
+When Python code is directly written in the program it is treated like a script that executes from top to the botton.
+
+When Python code is composed as a function then it requires a
+call for execution. 
+On call, the program control jumps from the point of call to the definition of the function. Next the code of the function executes. Finally the program control jumps back (returns) to the statement following the call to the function.
+
+
+Function
+------------
+A function is a block of code that is designed to perform a
+sub task for the program.
+It is composed of 2 parts:
+1) Signature
+2) Body
+
+Signature notifies what a function does.
+It is composed of : 
+* Name of the function
+* Parameters (0 to many input data)
+
+Body of the function contains instructions to perform the said sub task.
+It may optionally contain a return instruction for transferring back a solution (data).
+
+Example:
+------------
+def area_rectangle(d1,d2):
+    ar = d1 * d2
+    return ar
+
+q = area_rectangle(4,3)
+use q
+
+
+Parameters:
+--------------
+Parameters are values that are shared by the caller with the called function of a program.
+Parameters are of 2 types:
+* Actual
+* Formal
+Actual parameter is the value/variable that is passed along with the function call.
+Formal parameter is the variable (defined in the functions signature) that receives the data of the actual parameter and
+hence becomes of the data type as of the actual parameter.
+
+
+return
+----------
+return statement is optionally used in functions to:
+* causes termination of the function 
+* make the program control jump back to the caller of the function.
+
+It can have a value associated so that can be transferred along with the returning program control.
+

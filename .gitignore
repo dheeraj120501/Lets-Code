@@ -1,0 +1,10 @@
+.vscode
+.obsidian
+/Handbooks
+node_modules
+/Interview_Notes
+*.exe
+venv
+__pycache__
+.vs
+saved_model
