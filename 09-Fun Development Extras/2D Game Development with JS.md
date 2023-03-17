@@ -5,10 +5,6 @@ We can split 2D game creation in 2 primary workflow.
 - Tile Based
 - Sprite Based
 
-## **Software Design Principle (SOLID)**
-
-SOLID stands for Single Responsibility Principle (SRP), Open closed Principle (OSP), Liskov substitution Principle (LSP), Interface Segregation Principle (ISP), and Dependency Inversion Principle (DIP).
-
 # **Concept of Preloading**
 
 Game world is pretty fast paced, so any dealy in loading of assest or registration of key press can result in wierd behaviour or bugs/glitches in game.
@@ -71,10 +67,10 @@ It is update section of gameloop where the update of every other component is ca
 
 # **Animation in 2D game**
 
-# **How to**
+# **Summary**
 
 To draw anything in we generally use canvas.
 Preloading all the assets.
-Creating entities from spritesheet  
-Creating a gameloop
-Applying Physics (Gravity, Collision etc)
+Creating entities from spritesheet.
+Creating a gameloop.
+Applying Physics (Gravity, Collision etc).
