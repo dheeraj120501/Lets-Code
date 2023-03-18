@@ -255,6 +255,8 @@ There are various ways to perform cross-validation. Some of the commonly used mo
   - When this happens, our accuracy will not properly reflect how well minority classes are being predicted.
   - To overcome this, The data is split so that each portion has the same percentage of all the different classes that exist in the dataset.
 
+For other cross validation methods check [here](theaidream.com/post/cross-validation-techniques-in-machine-learning).
+
 # Curse of Dimensionality
 
 The impact of having more dimensions in the model, which is nothing but having multicollinearity in the data can lead to overfitting, and this exposes the model to have variance errors, that is the model may fail to perform or predict for new unseen data.
@@ -317,8 +319,6 @@ Ways:
 One efficient way to avoid overfitting.
 
 L1 (Lasso) and L2 (Ridge) are the common regularization techniques used to address over-fitting and feature selection.
-
-# Dummy Variable and One Hot Encoding
 
 # Loss Function and Performance Metrics
 

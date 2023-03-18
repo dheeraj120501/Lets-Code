@@ -268,6 +268,12 @@ Binning can be fixed width and adaptive.
 
 ### Handling Categorical Data
 
+Some algorithms can work with categorical data directly. But many machine learning algorithms cannot operate on label data directly. They require all input variables and output variables to be numeric.
+
+In general, this is mostly a constraint of the efficient implementation of machine learning algorithms rather than hard limitations on the algorithms themselves.
+
+So categorical data must be converted to a numerical form. If the categorical variable is an output variable, you may also want to convert predictions by the model back into a categorical form in order to present them or use them in some application.
+
 There are two major classes of categorical data, nominal and ordinal.
 
 - In any nominal categorical data attribute, there is no concept of ordering amongst the values of that attribute.
@@ -275,7 +281,14 @@ There are two major classes of categorical data, nominal and ordinal.
 
 Typically any standard workflow in feature engineering involves some form of transformation of these categorical values into numeric labels and then applying some encoding scheme on these values.
 
-Encoding includes one-hot encoding, dummy coding, effect coding, Bin-counting, hash embedding
+Label encoding is simply converting each value in a column to a number.
+
+When doing label encoding it labels categories as 0,1,2,3…. Now since 0<1<2, the equations in the regression model may thing one category has a higher value than the other, which is of course not true.
+
+- To solve this situation we have a concept called **Dummy variables**.
+- In regression analysis, a dummy variable is one that takes the value 0 or 1 to indicate the absence or presence of some categorical effect that may be expected to shift the outcome.
+
+Concept of dummy variables can be done using one-hot encoding, dummy coding, effect coding, Bin-counting, hash embedding.
 
 ### Feature Scaling
 
