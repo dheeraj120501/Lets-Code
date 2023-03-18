@@ -15,13 +15,13 @@ Deep Learning Algorithms uses multiple layers to progressively extract higher-le
 
 ## Why DL
 
-Applicability: Can be applied to a wide domain of problems.
+**Applicability**: Can be applied to a wide domain of problems.
 
-Performance: state of the art
+**Performance**: state of the art
 
 ### Why it's Popular now?
 
-Dataset: With the boom of Internet era data also boomed and hence we have lot of data and not just data but labelled data.
+**Dataset**: With the boom of Internet era data also boomed and hence we have lot of data and not just data but labelled data.
 
 - Some examples of popular public dataset in major fields:
   - Text: SQuad
@@ -29,16 +29,16 @@ Dataset: With the boom of Internet era data also boomed and hence we have lot of
   - Video: Youtube 8M
   - Audio: Google Audioset
 
-Hardware: For different devices we can use different and custom hardwares.
+**Hardware**: For different devices we can use different and custom hardwares.
 
-- Moore's law: Moore the co-founder of Intel said that the number of transistors in a dense integrated circuit (IC) doubles about every two years.
+- **Moore's law**: Moore the co-founder of Intel said that the number of transistors in a dense integrated circuit (IC) doubles about every two years.
 - For large dataset one can use GPU, TPU.
 - For Mobile one can use Mobile CPU, GPU, DSP or NPU.
 - For Smart watch or glass one can use Edge TPU, NPU.
 
-Framework/Libraries: TensorFlow, Keras, PyTorch and UI based drag and drop systems like AutoML.
+**Framework/Libraries**: TensorFlow, Keras, PyTorch and UI based drag and drop systems like AutoML.
 
-Architecture
+**Architecture**
 
 - Transfer Learning.
   - Text Classification: BERT
@@ -48,7 +48,7 @@ Architecture
   - Object Detection: YOLO
   - Speech Generation: WaveNET
 
-Community
+**Community**
 
 ## AI VS ML VS DL
 
@@ -60,43 +60,63 @@ DL is extracting patterns from data using neural networks.
 
 ### DL VS ML
 
-Data Dependency: Deep learning requires more amount of data.
+**Data Dependency**: Deep learning requires more amount of data.
 
-- []()
+![Untitled](./images/Untitled.png)
 
-Hardware Dependency: DL require powerful GPUs (costly hardware) while ML models can be trained with CPU.
+**Hardware Dependency**: DL require powerful GPUs (costly hardware) while ML models can be trained with CPU.
 
-Training Time: Training time with DL is quite high.
+**Training Time**: Training time with DL is quite high.
 
-Feature Selection: With Representation learning DL extracts features automatically
+**Feature Selection**: With Representation learning DL extracts features automatically
 
-Interpretability: DL is like a black box and hence fails for interpretability because we don't know what learning was done by DL to come to a conclusion.
+**Interpretability**: DL is like a black box and hence fails for interpretability because we don't know what learning was done by DL to come to a conclusion.
 
 ## Application of DL
 
 Self Driving Car
+
 Game Playing Agents
+
 Virtual Assistance
+
 Image Colorization
+
 Adding audio to mute videos
+
 Image Caption Generation
+
 Text Translation
+
 Pixel Restoration
+
 Object Detection
+
 Generate Audio, Video, Image, Text using GAN
 
 # Types of Neural Network
 
-There are a lot of Neural Networks some of them are:
+Artificial Neural Networks(ANN)/MLP (Multilayer Perceptron) for Regression and classification
 
-- MLP (Multilayer Perceptron): Mostly used in supervised problems.
-- CNN (Convolutional Neural Network): Mostly used in Image and Video Processing.
-- RNN (Recurrent Neural Network):
-  - LSTM (Long Short Term Memory)
-- Auto Encoders: Compression without lossing the quality
-- GAN (Generative adversarial network)
+Convolutional Neural Networks(CNN) for Computer Vision i.e. used in Image and Video Processing.
+
+Recurrent Neural Networks(RNN) for Time Series analysis
+
+Self-organizing maps for Feature extraction
+
+Deep Boltzmann machines for Recommendation systems
+
+Auto Encoders for compression without losing the quality
+
+GAN (Generative adversarial network)
 
 # Perceptron
+
+A neural network link that contains computations to track features and uses Artificial Intelligence in the input data is known as Perceptron. This neural links to the artificial neurons using simple logic gates with binary outputs.
+
+A Perceptron is an ML algorithm for supervised learning of binary classifiers. Furthermore, Perceptron also has an essential role as an Artificial Neuron or Neural link in detecting certain input data computations in business intelligence.
+
+The Perceptron algorithm learns the weights for the input signals in order to draw a linear decision boundary.
 
 ## History
 
@@ -104,26 +124,27 @@ An artificial neuron is a mathematical function based on a model of biological n
 
 It is an elementary unit in an artificial neural network.
 
-## Introduction
-
-A neural network link that contains computations to track features and uses Artificial Intelligence in the input data is known as Perceptron. This neural links to the artificial neurons using simple logic gates with binary outputs.
-
-A Perceptron is an algorithm for supervised learning of binary classifiers.
-
-The Perceptron algorithm learns the weights for the input signals in order to draw a linear decision boundary.
-
 ## Geometric Intuition of Perceptron
 
 Line, Plane and Hyperplane
 
-Limitation of only linearly seperable dataset
+**Weight shows the strength of a particular node.**
+
+Limitation of only linearly separable dataset
 
 ## Types of Perceptron
 
 There are 2 major types of perceptron
 
-- Single layer: Single layer perceptron can learn only linearly separable patterns.
-- Multilayer: Multilayer perceptrons can learn about two or more layers having a greater processing power.
+- **Single layer**: The main objective of the single-layer perceptron model is to analyze the linearly separable objects with binary outcomes.
+  - Single layer perceptron can learn only linearly separable patterns.
+  - Being a supervised learning algorithm of binary classifiers, we can also consider it a single-layer neural network with four main parameters: input values, weights and Bias, net sum, and an activation function.
+  - It can’t work with non-linear patterns like in XOR gate.
+- **Multilayer**: It is mainly similar to a single-layer perceptron model but has more hidden layers so it can learn from two or more layers having a greater processing power.
+  - A multilayer perceptron model has a greater processing power and can process linear and non-linear patterns.
+  - It also implements logic gates such as AND, OR, XOR, XNOR, and NOR.
+  - It is tough to predict how much the dependent variable affects each independent variable.
+  - The model functioning depends on the quality of training.
 
 ## Perceptron VS Neuron
 
@@ -144,46 +165,101 @@ Perceptron is weakly inspired by Neuron the reason to say that are:
 - The internal processing in the Nucleus is unknown.
 - Neuroplasticity
 
-## Training Perceptron
+# Training Perceptron
 
-Dot product, bias and non-linearity (activation function)
+![Untitled](./images/Untitled%201.png)
 
-### Common Activation Function
+![Untitled](./images/Untitled%202.png)
 
-Sigmoid
+As all inputs are densely connected to all outputs, these layers are called **Dense Layers**.
 
-Hyperbolic Tangent
+The core steps for training a perceptron are:
 
-Rectified Linear Unit (ReLU)
+- Dot product of weights and inputs
+- Bias
 
-> All activation functions are non-linear.
+- Non-linearity (activation function): This activation function is also known as the step function.
+  - Some Common Activation Function are:
+    - Step Function
+    - Sign Function
+    - Sigmoid: The S-curve.
+    - Hyperbolic Tangent
+    - Rectified Linear Unit (ReLU): This is the most popular activation function in DL.
+      - A smooth approximation to the rectifier is the Softplus function.
+      - The derivative of Softplus is the logistic or sigmoid function.
+    - Softplus
+    - Softmax
+      > All activation functions are non-linear.
+      > If we do not apply activation function then the output signal would be simply linear function(one-degree polynomial). Now, a linear function is easy to solve but they are limited in their complexity, have less power. Without activation function, our model cannot learn and model complicated data such as images, videos, audio, speech, etc.
+      > An in-depth explaination on activation functions can be seen on [https://www.theaidream.com/post/an-overview-of-activation-functions-in-deep-learning](https://www.theaidream.com/post/an-overview-of-activation-functions-in-deep-learning).
 
-### Perceptron Rule
+![Untitled](./images/Untitled%203.png)
 
-EPOCHS and Conevergence
-learning rate
+# \***\*How do Neural networks learn?\*\***
 
-**Alogorithm**
+A perceptron model is also classified as one of the best and most specific types of Artificial Neural networks.
 
-```py
+Learning in a neural network is closely related to how we learn in our regular lives and activities — we perform an action and are either accepted or corrected by a trainer or coach to understand how to get better at a certain task.
+
+Neural networks require a trainer in order to describe what should have been produced as a response to the input. Based on the difference between the actual value and the predicted value, an error value also called **Cost Function** is computed and sent back through the system.
+
+## Loss Functions
+
+The loss of a neural network measured the cost incurred from incorrect predictions.
+
+The **empirical loss** measures the total loss over our entire dataset.
+
+- It is also known as Objective function, Cost function, empirical risk.
+
+**Cross entropy loss** can be used with models that output a probability between 0 and 1.
+
+**Mean squared error loss** can be used with regression model that outputs continuous real numbers.
+
+For each layer of the network, the cost function is analyzed and used to adjust the threshold and weights for the next input. Our aim is to minimize the cost function.
+
+Our goal is to find the network weights that achieve the lowest loss.
+
+There are basically 2 ways to adjust weights:
+
+1. Brute-force method
+2. Gradient Descent
+
+![Untitled](./images/Untitled%204.png)
+
+Neural networks may be used for a variety of different concepts and ideas, and learn through a specific mechanism of backpropagation and error correction during the testing phase. By properly minimizing the error, these multi-layered systems may be able to one day learn and conceptualize ideas alone, without human correction.
+
+# Perceptron Learning Rule
+
+Perceptron Learning Rule states that the algorithm would automatically learn the optimal weight coefficients.
+
+In the Perceptron Learning Rule, the predicted output is compared with the known output. If it does not match, the error is propagated backward to allow weight adjustment to happen.
+
+EPOCHS and Convergence
+
+**Algorithm**
+
+```python
 # M1
 for i in EPOCHS:
-  data = dataset.random()
-  Wn = Wo + n(Yi - Yio)Xi
+	data = dataset.random()
+	Wn = Wo + n(Yi - Yio)Xi
 
 # M2
 while convergence:
-  data = dataset.random()
-  Wn = Wo + n(Yi - Yio)Xi
+	data = dataset.random()
+	Wn = Wo + n(Yi - Yio)Xi
 ```
 
-### Loss Functions
+## Concept of learning rate
 
-# ANN
+Small learning rate converges slowly and gets stuck in false local minima.
 
-Layers
-Input layer
-Hidden Layers
-Output layer
-Perceptron
-Weights
+Large learning rate overshoots become unstable and diverges.
+
+Stable learning rate converges smoothly and avoid local minima.
+
+One way to have a stable learning rate is by having to try a lot of learning rate and see what works best for the case (brute-force) other way is to have an adaptive learning rate.
+
+# Issue of Overfitting and Regularization
+
+Dropout, Early Stopping
